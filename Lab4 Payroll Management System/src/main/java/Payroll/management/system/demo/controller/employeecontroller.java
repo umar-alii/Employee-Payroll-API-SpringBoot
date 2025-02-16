@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/employee")
 public class employeecontroller {
 
-    private empolyee[] Employee = new empolyee[10];
+    private final empolyee[] Employee = new empolyee[10];
     private int count = 3;
 
     public employeecontroller() {
