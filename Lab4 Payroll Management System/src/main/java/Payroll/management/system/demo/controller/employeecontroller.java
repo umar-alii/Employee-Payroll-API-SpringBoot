@@ -37,7 +37,7 @@ public class employeecontroller {
 
     @PostMapping("/newemp")
     public empolyee addEmployee(@RequestBody empolyee newEmp) {
-        if (count < Employee.length) { // Prevent overflow
+        if (count < Employee.length) {
             Employee[count] = new empolyee(newEmp.getName(), newEmp.getSalary(), newEmp.getDesignation());
             return Employee[count++];
         }
